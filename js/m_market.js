@@ -222,7 +222,7 @@ function sendKakaoTmp(imageUrl){
 			  content: {
 				title: '간단보험료계과산 설계 결과',
 				description: '하단의 이미지를 클릭하여 저장하세요.',
-				imageUrl: imageUrl,
+				imageUrl: '',
 				imageWidth:600,
 				imageHeight:390,
 				link: '',
