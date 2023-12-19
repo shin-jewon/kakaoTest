@@ -189,7 +189,7 @@ function sendKakaoTmp(imageUrl){
 	Kakao.Share.sendDefault({
 			 objectType: 'feed',
 			  content: {
-				title: '간단보험료 설계 결과',
+				title: '[DB생명] 간단보험료 설계 결과',
 				description: '하단 버튼 클릭 후 이미지를 길게 눌러 저장하세요.',
 				imageUrl: imageUrl,
 				imageWidth:600,
