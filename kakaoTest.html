@@ -1857,8 +1857,7 @@ var silson = "X014901001,X014902001,X014903001,X015001001,X015002001,X015003001,
 	<a href="https://marketdev.idblife.com/m/Product/calculator.do?seq=418" class="btnB lineType">다시계산</a>
 
 	<a href="javascript:printResult();" class="btnB greenType m-hide">프린트</a>
-	<a href="javascript:sendKakao2();" class="btnB greenType m-show">알림톡보내기2</a>
-	<a href="javascript:sendKakao3();" class="btnB greenType m-show">카톡전송</a>
+	<a href="javascript:sendKakao();" class="btnB greenType m-show">카톡전송</a>
 	
 	<!-- //231017 모바일숨김처리 m-hide 클래스 추가, 알림톡버튼추가 -->
 
@@ -2057,14 +2056,10 @@ function printResult() {
 }
 
 <!-- 20231127 | 모바일보험료계산 알림톡 발송 기능 | 신제원  -->
-function sendKakao() {
-	makeKakaoImage(); // 알림톡에 첨부될 설계결과 이미지 생성 - m_market.js
-}
+
 function sendKakao2(){
+	makeKakaoImage();
 	sendKakaoImage();
-}
-function sendKakao3(){
-	sendKakaoImage3();
 }
 function cspopup(url) {
 	fNewWin(url , 804 ,806);
