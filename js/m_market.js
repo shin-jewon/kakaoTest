@@ -198,9 +198,9 @@ function sendKakaoImage(){
 	var imgFiles = [imgFile];
 	Kakao.Share.uploadImage({
 		file:imgFiles,
-	}).then(function(response){
-		alert("이미지생성성공 : "+ response.infos.original.url);
-		sendKakaoTmp(response.infos.original.URL);
+	}).then(function(res){
+		alert("이미지생성성공 : "+ res.infos.original.url);
+		sendKakaoTmp(res.infos.original.url);
 	}).catch(error => {
 		console("이미지생성실패 : " + error);
 	});;
