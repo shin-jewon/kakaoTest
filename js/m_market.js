@@ -168,10 +168,10 @@ function sendKakaoImage(){
 	Kakao.Share.uploadImage({
 		file:imgFiles,
 	}).then(function(res){
-		alert("이미지생성성공 : "+ res.infos.original.url);
+		console.log("이미지생성성공 : "+ res.infos.original.url);
 		sendKakaoTmp(res.infos.original.url);
 	}).catch(error => {
-		console("이미지생성실패 : " + error);
+		console.log("이미지생성실패 : " + error);
 	});;
 					
 	})
@@ -190,7 +190,7 @@ function sendKakaoTmp(imageUrl){
 			 objectType: 'feed',
 			  content: {
 				title: '[DB생명] 간단보험료 설계 결과',
-				description: '하단 버튼 클릭 후 이미지를 길게 눌러 저장하세요.',
+				description: '하단 이미지 저장하기 버튼 클릭 후 이미지를 길게 눌러 저장하세요.',
 				imageUrl: imageUrl,
 				imageWidth:600,
 				imageHeight:390,
