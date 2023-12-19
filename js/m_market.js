@@ -220,17 +220,29 @@ function sendKakaoTmp(imageUrl){
 	Kakao.Share.sendDefault({
 			 objectType: 'feed',
 			  content: {
-				title: '간단보험료계과산 설계 결과',
-				description: '하단의 이미지를 클릭하여 저장하세요.',
+				title: '스마트명함 서비스',
+				description: 'DB생명보험 설계사입니다. 보험가입 문의주시면 친철히 상담해드리겠습니다.',
 				imageUrl: '',
 				imageWidth:600,
 				imageHeight:390,
-				link: '',
+				link: {
+					// mobileWebUrl: 'https://mdev.idblife.com/callToFP.mvc?telNum=' + final_phone,
+					mobileWebUrl: '',
+					// webUrl: 'https://mdev.idblife.com/callToFP.mvc?telNum=' + final_phone,
+					webUrl: '',
+					//androidExecParams: 'tel:' + final_phone,
+					//iosExecParams: 'tel:' + final_phone
+				},
 			},
 			buttons: [
 				{
 					title: 'DB생명보험',
-					link: '',
+					link: {
+						mobileWebUrl: 'https://mdev.idblife.com',
+						webUrl: 'https://www.idblife.com',
+						//androidExecParams: 'https://www.idblife.com',
+						//iosExecParams: 'https://www.idblife.com'
+					},
 				},
 			]
 		});
