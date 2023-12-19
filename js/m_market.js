@@ -238,10 +238,8 @@ function sendKakaoTmp(imageUrl){
 				{
 					title: 'DB생명보험',
 					link: {
-						mobileWebUrl: 'https://mdev.idblife.com',
-						webUrl: 'https://www.idblife.com',
-						//androidExecParams: 'https://www.idblife.com',
-						//iosExecParams: 'https://www.idblife.com'
+						mobileWebUrl: imageUrl,
+						webUrl: imageUrl,
 					},
 				},
 			]
