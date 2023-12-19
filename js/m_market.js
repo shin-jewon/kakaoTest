@@ -220,9 +220,9 @@ function sendKakaoTmp(imageUrl){
 	Kakao.Share.sendDefault({
 			 objectType: 'feed',
 			  content: {
-				title: '스마트명함 서비스',
-				description: 'DB생명보험 설계사입니다. 보험가입 문의주시면 친철히 상담해드리겠습니다.',
-				imageUrl: '',
+				title: '간단보험료 설계 화면',
+				description: '간단보험료 설계 결과입니다.',
+				imageUrl: imageUrl,
 				imageWidth:600,
 				imageHeight:390,
 				link: {
