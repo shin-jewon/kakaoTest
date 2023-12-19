@@ -227,9 +227,9 @@ function sendKakaoTmp(imageUrl){
 				imageHeight:390,
 				link: {
 					// mobileWebUrl: 'https://mdev.idblife.com/callToFP.mvc?telNum=' + final_phone,
-					mobileWebUrl: '',
+					mobileWebUrl: imageUrl,
 					// webUrl: 'https://mdev.idblife.com/callToFP.mvc?telNum=' + final_phone,
-					webUrl: '',
+					webUrl: imageUrl,
 					//androidExecParams: 'tel:' + final_phone,
 					//iosExecParams: 'tel:' + final_phone
 				},
