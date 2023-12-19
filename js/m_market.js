@@ -216,7 +216,7 @@ function sendKakaoImage(){
 
 }
 function sendKakaoTmp(imageUrl){
-	alert("sendKakaoTmp 실행");
+	alert("sendKakaoTmp 실행 : "+imageUrl);
 	Kakao.Share.sendDefault({
 			 objectType: 'feed',
 			  content: {
