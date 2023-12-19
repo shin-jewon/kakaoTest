@@ -227,9 +227,9 @@ function sendKakaoTmp(imageUrl){
 				imageHeight:390,
 				link: {
 					// mobileWebUrl: 'https://mdev.idblife.com/callToFP.mvc?telNum=' + final_phone,
-					mobileWebUrl: imageUrl,
+					mobileWebUrl: 'http://k.kakaocdn.net/dn/daDjvp/bl4CevMOsBL/gEGiAjlbEwMFUUk1Bhb5uk/kakaolink40_original.png',
 					// webUrl: 'https://mdev.idblife.com/callToFP.mvc?telNum=' + final_phone,
-					webUrl: imageUrl,
+					webUrl: 'http://k.kakaocdn.net/dn/daDjvp/bl4CevMOsBL/gEGiAjlbEwMFUUk1Bhb5uk/kakaolink40_original.png',
 					//androidExecParams: 'tel:' + final_phone,
 					//iosExecParams: 'tel:' + final_phone
 				},
