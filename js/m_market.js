@@ -146,37 +146,6 @@ function dataURItoBlob(dataURI) {
 	var bb = new Blob([ab], { type: mimeString });
 	return bb;
 }
-function makeKakaoImage(){
-	$("#m-print").css("width","fit-content"); // 이미지 생성 전 가로스크롤 임시 제거
-	$("#m-print").css("padding","10px"); // 이미지에 padding 10px 부여
-	$(".sticky-col").css("display","none"); // 해약환급금 예시표 sticky 임시 제거
-	$(".sticky-intersect").css("display","none"); // 해약환급금 예시표 sticky 임시 제거
-	$(".sticky-thead").css("display","none"); // 해약환급금 예시표 sticky 임시 제거
-	html2canvas(document.querySelector("#m-print")).then(canvas => {
-		//document.body.appendChild(canvas);
-		imgDataUrl = canvas.toDataURL("image/png");
-		
-		setTimeout(function() {
-				
-				var blobBin = atob(imgDataUrl.split(',')[1]); // base64 데이터 디코딩
-				var array = [];
-				for (var i = 0; i < blobBin.length; i++) {
-					array.push(blobBin.charCodeAt(i));
-				}
-				var file = new Blob([new Uint8Array(array)], {type: 'image/png'}); // Blob 생성
-				//document.body.append(imgHtml);
-				$(".resultImg").css("display", "none");
-				
-				//$imgView.addClass('on');
-				
-			}, 1000);
-	})
-	$("#m-print").css("width","auto"); // 이미지 생성 후 가로스크롤 제거 취소
-	$("#m-print").css("padding","0px"); // 이미지 생성 후 영역 padding 제거
-	$(".sticky-col").css("display","block"); // 해약환급금 예시표 sticky 제거 취소
-	$(".sticky-intersect").css("display","block"); // 해약환급금 예시표 sticky 제거 취소
-	$(".sticky-thead").css("display","block"); // 해약환급금 예시표 sticky 제거 취소		
-}
 function sendKakaoImage(){
 	$("#m-print").css("width","fit-content"); // 이미지 생성 전 가로스크롤 임시 제거
 	$("#m-print").css("padding","10px"); // 이미지에 padding 10px 부여
@@ -186,9 +155,9 @@ function sendKakaoImage(){
 	html2canvas(document.querySelector("#m-print")).then(canvas => {
 		//document.body.appendChild(canvas);
 		var imgDataUrl = canvas.toDataURL("image/png");
-		var imgHtml = '<img src=\"' + imgDataUrl + '\" alt=\"\" class=\"resultImg\">';
-		$('#m-print').append(imgHtml);
-		$(".resultImg").css("display", "none");
+		//var imgHtml = '<img src=\"' + imgDataUrl + '\" alt=\"\" class=\"resultImg\">';
+		//$('#m-print').append(imgHtml);
+		//$(".resultImg").css("display", "none");
 		
 		//Kakao.init("e26bd625a2612a1880395308bf330f72");
 	var imgBlob = dataURItoBlob(imgDataUrl);
@@ -212,34 +181,34 @@ function sendKakaoImage(){
 	$(".sticky-intersect").css("display","block"); // 해약환급금 예시표 sticky 제거 취소
 	$(".sticky-thead").css("display","block"); // 해약환급금 예시표 sticky 제거 취소	
 		
-	alert("sendCard");
+	//alert("sendCard");
 
 }
 function sendKakaoTmp(imageUrl){
-	alert("sendKakaoTmp 실행 : "+imageUrl);
+	//alert("sendKakaoTmp 실행 : "+imageUrl);
 	Kakao.Share.sendDefault({
 			 objectType: 'feed',
 			  content: {
-				title: '간단보험료 설계 화면',
-				description: '간단보험료 설계 결과입니다.',
+				title: '간단보험료 설계화면',
+				description: '하단 버튼 클릭 후 이미지를 꾹 눌러 저장하세요.',
 				imageUrl: imageUrl,
 				imageWidth:600,
 				imageHeight:390,
 				link: {
 					// mobileWebUrl: 'https://mdev.idblife.com/callToFP.mvc?telNum=' + final_phone,
-					mobileWebUrl: 'http://k.kakaocdn.net/dn/daDjvp/bl4CevMOsBL/gEGiAjlbEwMFUUk1Bhb5uk/kakaolink40_original.png',
+					mobileWebUrl:imageUrl,
 					// webUrl: 'https://mdev.idblife.com/callToFP.mvc?telNum=' + final_phone,
-					webUrl: 'http://k.kakaocdn.net/dn/daDjvp/bl4CevMOsBL/gEGiAjlbEwMFUUk1Bhb5uk/kakaolink40_original.png',
+					webUrl: imageUrl,
 					//androidExecParams: 'tel:' + final_phone,
 					//iosExecParams: 'tel:' + final_phone
 				},
 			},
 			buttons: [
 				{
-					title: 'DB생명보험',
+					title: '이미지 저장하기',
 					link: {
-						mobileWebUrl: 'https://mdev.idblife.com',
-						webUrl: 'https://www.idblife.com',
+						mobileWebUrl: imageUrl,
+						webUrl: imageUrl,
 					},
 				},
 			]
