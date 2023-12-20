@@ -190,7 +190,7 @@ function sendKakaoTmp(imageUrl){
 			 objectType: 'feed',
 			  content: {
 				title: '[DB생명] 간단보험료 설계 결과',
-				description: '금쪽이색히는 눌러도 뭔지 모르겠지만 눌러보세요 ㅋㅋ',
+				description: '하단 이미지 저장하기 버튼 클릭 후 이미지를 길게 눌러 저장하세요.',
 				imageUrl: imageUrl,
 				imageWidth:600,
 				imageHeight:390,
@@ -205,7 +205,7 @@ function sendKakaoTmp(imageUrl){
 			},
 			buttons: [
 				{
-					title: '어른만 누를 수 있습니다.',
+					title: '이미지 저장하기',
 					link: {
 						mobileWebUrl: imageUrl,
 						webUrl: imageUrl,
