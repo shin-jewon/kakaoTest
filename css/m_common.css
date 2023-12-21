@@ -369,3 +369,49 @@ ul.txtInfo li:first-child{padding:0}
 .sticky-wrap .sticky-col {
 	border-right: 1px solid #e4e4e4;	
 }
+
+@media (min-width: 767px) {
+ body {
+  font-size: 20px;
+  line-height: normal;
+ }
+ #subInput.tableType01 thead th,
+ #refund_result .tableType01 th,
+ #refund_result .tableType01 td {
+  white-space: normal;
+     word-break: break-all;
+ }
+ #m-print .titDep01 {
+  font-size: 28px;
+ }
+ #m-print .titDep02 {
+  font-size: 24px;
+ }
+ #m-print .titDep03 {
+  font-size: 21px
+ }
+ #guarantee_result .tableType01,
+ #m-print > .tableType01 {
+  font-size: 20px;
+ }
+ #m-print > .tableType01 td.right,
+ #m-print #total_result_foot tr td:last-child {
+  font-size: 18px;
+  text-align: right;
+ }
+ #m-print .tableType01 table td.commentBox {
+  font-size: 20px;
+     line-height: 1.4;
+     padding-top: 18px;
+ }
+ #m-print .titDep01 + p {
+  font-size: 18px;
+  margin-top: 10px;
+ } 
+ #m-print .txtInfo {
+  font-size: 20px
+ }
+ #m-print .txtInfo li {
+  margin-top: 10px;
+ }
+}
