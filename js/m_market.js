@@ -168,10 +168,10 @@ function sendKakaoImage(){
 	Kakao.Share.uploadImage({
 		file:imgFiles,
 	}).then(function(res){
-		console.log("이미지생성성공 : "+ res.infos.original.url);
+		alert("이미지생성성공 : "+ res.infos.original.url);
 		sendKakaoTmp(res.infos.original.url);
 	}).catch(error => {
-		console.log("이미지생성실패 : " + error);
+		alert("이미지생성실패 : " + error);
 	});;
 					
 	})
@@ -185,7 +185,7 @@ function sendKakaoImage(){
 
 }
 function sendKakaoTmp(imageUrl){
-	//alert("sendKakaoTmp 실행 : "+imageUrl);
+	alert("sendKakaoTmp 실행 : "+imageUrl);
 	Kakao.Share.sendDefault({
 			 objectType: 'feed',
 			  content: {
