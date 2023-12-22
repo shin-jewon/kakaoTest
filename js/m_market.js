@@ -147,7 +147,7 @@ function dataURItoBlob(dataURI) {
 	return bb;
 }
 function sendKakaoImage(){
-	$("#m-print").css("width","fit-content"); // 이미지 생성 전 가로스크롤 임시 제거
+	$("#m-print").css("width","768px"); // 이미지 생성 전 가로스크롤 임시 제거
 	$("#m-print").css("padding","10px"); // 이미지에 padding 10px 부여
 	$(".sticky-col").css("display","none"); // 해약환급금 예시표 sticky 임시 제거
 	$(".sticky-intersect").css("display","none"); // 해약환급금 예시표 sticky 임시 제거
