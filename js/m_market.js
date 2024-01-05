@@ -175,11 +175,11 @@ function sendKakaoImage(){
 	});;
 					
 	})
-	$("#m-print").css("width","auto"); // 이미지 생성 후 가로스크롤 제거 취소
-	$("#m-print").css("padding","0px"); // 이미지 생성 후 영역 padding 제거
-	$(".sticky-col").css("display","block"); // 해약환급금 예시표 sticky 제거 취소
-	$(".sticky-intersect").css("display","block"); // 해약환급금 예시표 sticky 제거 취소
-	$(".sticky-thead").css("display","block"); // 해약환급금 예시표 sticky 제거 취소	
+	//$("#m-print").css("width","auto"); // 이미지 생성 후 가로스크롤 제거 취소
+	//$("#m-print").css("padding","0px"); // 이미지 생성 후 영역 padding 제거
+	//$(".sticky-col").css("display","block"); // 해약환급금 예시표 sticky 제거 취소
+	//$(".sticky-intersect").css("display","block"); // 해약환급금 예시표 sticky 제거 취소
+	//$(".sticky-thead").css("display","block"); // 해약환급금 예시표 sticky 제거 취소	
 		
 	//alert("sendCard");
 
