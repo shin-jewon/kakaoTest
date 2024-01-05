@@ -215,6 +215,98 @@ function sendKakaoTmp(imageUrl){
 		});
 	}
 
+function sendKakaoTmp2(){
+	//alert("sendKakaoTmp 실행 : "+imageUrl);
+	Kakao.Share.sendDefault({
+			 objectType: 'feed',
+			  content: {
+				title: '[DB생명] 간단보험료 설계 결과',
+				description: '하단 이미지 저장하기 버튼 클릭 후 이미지를 길게 눌러 저장하세요.',
+				imageUrl: http://k.kakaocdn.net/dn/NcWG0/bl4COBfSTR9/fKtFklpLXUyEORDcvrVxQK/kakaolink40_original.png,
+				imageWidth:600,
+				imageHeight:390,
+				link: {
+					// mobileWebUrl: 'https://mdev.idblife.com/callToFP.mvc?telNum=' + final_phone,
+					mobileWebUrl:imageUrl,
+					// webUrl: 'https://mdev.idblife.com/callToFP.mvc?telNum=' + final_phone,
+					webUrl: imageUrl,
+					//androidExecParams: 'tel:' + final_phone,
+					//iosExecParams: 'tel:' + final_phone
+				},
+			},
+			buttons: [
+				{
+					title: '이미지 저장하기',
+					link: {
+						mobileWebUrl: imageUrl,
+						webUrl: imageUrl,
+					},
+				},
+			]
+		});
+	}
+
+function sendKakaoTmp3(){
+	//alert("sendKakaoTmp 실행 : "+imageUrl);
+	Kakao.Share.sendDefault({
+			 objectType: 'feed',
+			  content: {
+				title: '[DB생명] 간단보험료 설계 결과',
+				description: '하단 이미지 저장하기 버튼 클릭 후 이미지를 길게 눌러 저장하세요.',
+				imageUrl: http://k.kakaocdn.net/dn/1Gb5y/bl4CQom4SVI/bdC8062uArIcfUZkqFkUBK/kakaolink40_original.png,
+				imageWidth:600,
+				imageHeight:390,
+				link: {
+					// mobileWebUrl: 'https://mdev.idblife.com/callToFP.mvc?telNum=' + final_phone,
+					mobileWebUrl:imageUrl,
+					// webUrl: 'https://mdev.idblife.com/callToFP.mvc?telNum=' + final_phone,
+					webUrl: imageUrl,
+					//androidExecParams: 'tel:' + final_phone,
+					//iosExecParams: 'tel:' + final_phone
+				},
+			},
+			buttons: [
+				{
+					title: '이미지 저장하기',
+					link: {
+						mobileWebUrl: imageUrl,
+						webUrl: imageUrl,
+					},
+				},
+			]
+		});
+	}
+
+function sendKakaoTmp4(){
+	//alert("sendKakaoTmp 실행 : "+imageUrl);
+	Kakao.Share.sendDefault({
+			 objectType: 'feed',
+			  content: {
+				title: '[DB생명] 간단보험료 설계 결과',
+				description: '하단 이미지 저장하기 버튼 클릭 후 이미지를 길게 눌러 저장하세요.',
+				imageUrl: http://k.kakaocdn.net/dn/bAXnPs/bl4CZF1OkQO/IEtsQb08qNBZq8hhl88zIK/kakaolink40_original.png,
+				imageWidth:600,
+				imageHeight:390,
+				link: {
+					// mobileWebUrl: 'https://mdev.idblife.com/callToFP.mvc?telNum=' + final_phone,
+					mobileWebUrl:imageUrl,
+					// webUrl: 'https://mdev.idblife.com/callToFP.mvc?telNum=' + final_phone,
+					webUrl: imageUrl,
+					//androidExecParams: 'tel:' + final_phone,
+					//iosExecParams: 'tel:' + final_phone
+				},
+			},
+			buttons: [
+				{
+					title: '이미지 저장하기',
+					link: {
+						mobileWebUrl: imageUrl,
+						webUrl: imageUrl,
+					},
+				},
+			]
+		});
+	}
 function sendKakaoImage3(){
 	/*if(checkMobile =='android' || checkMobile =='ios' || checkMobile == 'other'){*/
 		Kakao.Share.sendDefault({
