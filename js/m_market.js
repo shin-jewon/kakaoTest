@@ -153,7 +153,7 @@ function sendKakaoImage(){
 	$(".sticky-intersect").css("display","none"); // 해약환급금 예시표 sticky 임시 제거
 	$(".sticky-thead").css("display","none"); // 해약환급금 예시표 sticky 임시 제거
 	html2canvas(document.querySelector("#m-print")).then(canvas => {
-		//document.body.appendChild(canvas);
+		document.body.appendChild(canvas);
 		var imgDataUrl = canvas.toDataURL("image/png");
 		//var imgHtml = '<img src=\"' + imgDataUrl + '\" alt=\"\" class=\"resultImg\">';
 		//$('#m-print').append(imgHtml);
@@ -175,11 +175,11 @@ function sendKakaoImage(){
 	});;
 					
 	})
-	//$("#m-print").css("width","auto"); // 이미지 생성 후 가로스크롤 제거 취소
-	//$("#m-print").css("padding","0px"); // 이미지 생성 후 영역 padding 제거
-	//$(".sticky-col").css("display","block"); // 해약환급금 예시표 sticky 제거 취소
-	//$(".sticky-intersect").css("display","block"); // 해약환급금 예시표 sticky 제거 취소
-	//$(".sticky-thead").css("display","block"); // 해약환급금 예시표 sticky 제거 취소	
+	$("#m-print").css("width","auto"); // 이미지 생성 후 가로스크롤 제거 취소
+	$("#m-print").css("padding","0px"); // 이미지 생성 후 영역 padding 제거
+	$(".sticky-col").css("display","block"); // 해약환급금 예시표 sticky 제거 취소
+	$(".sticky-intersect").css("display","block"); // 해약환급금 예시표 sticky 제거 취소
+	$(".sticky-thead").css("display","block"); // 해약환급금 예시표 sticky 제거 취소	
 		
 	//alert("sendCard");
 
