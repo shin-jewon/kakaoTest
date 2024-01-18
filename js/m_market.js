@@ -152,7 +152,8 @@ function sendKakaoImage(){
 	$(".sticky-col").css("display","none"); // 해약환급금 예시표 sticky 임시 제거
 	$(".sticky-intersect").css("display","none"); // 해약환급금 예시표 sticky 임시 제거
 	$(".sticky-thead").css("display","none"); // 해약환급금 예시표 sticky 임시 제거
-	html2canvas(document.querySelector("#m-print")).then(canvas => {
+	html2canvas(document.querySelector("#m-print"),
+		    {scale:1}).then(canvas => {
 		document.body.appendChild(canvas);
 		var imgDataUrl = canvas.toDataURL("image/png");
 		//var imgHtml = '<img src=\"' + imgDataUrl + '\" alt=\"\" class=\"resultImg\">';
