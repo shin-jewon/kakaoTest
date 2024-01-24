@@ -62,7 +62,7 @@ function autoTableInterval() {
 	$tg.each(function(i){
 		var $interval = $tg.eq(i);
 		if($interval.parent().prev().length > 0) {
-			$interval.parent().prev().find('.commentBox').css('padding-bottom','16px');
+			$interval.parent().prev().find('.commentBox').css('padding-bottom','40px');
 		}
 	})
 }
